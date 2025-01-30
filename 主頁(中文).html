@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鈞翼先進材料 JunYi Material</title>
+    <style>
+        
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav .dropdown {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav .dropdown > a {
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+nav .dropdown > a.active-link {
+    background-color: #007BFF;
+}
+
+nav .dropdown > a:hover {
+    background-color: #555;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 90px;
+    z-index: 100;
+}
+
+nav .dropdown-content a {
+    color: #333;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 區塊樣式 */
+section {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* 預設隱藏 */
+}
+
+section.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+/* 動畫效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 回到頂部按鈕樣式 */
+button {
+    font-family: inherit;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* 圖片效果 */
+section img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav .dropdown {
+        margin-bottom: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <header>
+        <h1 style="text-align: center;">鈞翼先進材料 JunYi Material</h1>
+</header>
+
+
+<nav></nav>
+
+<section id="GaAs">
+    <h2>砷化鎵</h2>
+    <table>
+        <tr>
+            <td>
+                <a href="newpage1.html" target="_blank">
+                    <img src="金屬鎵.png" style="width:150px"alt="金屬鎵" />
+                </a>
+            </td>
+            <td>
+                <a href="newpage2.html" target="_blank">
+                    <img src="砷化鎵晶體.jpg" style="width:150px"alt="砷化鎵晶體" />
+                </a>
+            </td>
+            <td>
+                <a href="newpage3.html" target="_blank">
+                    <img src="砷化鎵晶片.jpg" style="width:150px"alt="砷化鎵晶片" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+             <td>
+                <a href="newpage4.html" target="_blank">
+                    <img src="砷化鎵晶片返拋光.jpg" style="width:150px"alt="砷化鎵返拋光" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>這是砷化鎵的內容。</p>
+</section>
+
+<section id="InP">
+    <h2>磷化銦</h2>
+    <table>
+        <tr>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".png" style="width:150px"alt="磷化銦1" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="磷化銦2" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="磷化銦3" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+             <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="磷化銦4" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>這是磷化銦的內容。</p>
+</section>
+
+<section id="pneumatic-rotary">
+    <h2>氣動顯示器 - 旋轉式</h2>
+    <table>
+        <tr>
+            <td>
+                <a href="氣動顯示器(旋轉式)1.HTML" target="_blank">
+                    <img src="rotor indicator & VCR .JPG" style="width:150px"alt="氣動顯示器 - 旋轉式1" />
+                </a>
+            </td>
+            <td>
+                <a href="氣動顯示器(旋轉式)2.HTML" target="_blank">
+                    <img src="rotor indicators.JPG" style="width:150px"alt="氣動顯示器 - 旋轉式2" />
+                </a>
+            </td>
+            <td>
+                <a href="氣動顯示器(旋轉式)3.HTML" target="_blank">
+                    <img src="stainless rotor indicator.JPG" style="width:150px"alt="氣動顯示器 - 旋轉式3" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".png" style="width:150px"alt="氣動顯示器 - 旋轉式4" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="氣動顯示器 - 旋轉式5" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="氣動顯示器 - 旋轉式6" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>這是旋轉式顯示器的內容。</p>
+</section>
+
+<section id="pneumatic-direct">
+    <h2>氣動顯示器 - 直動式</h2>
+    <table>
+        <tr>
+            <td>
+                <a href="氣動顯示器(直動式)1.HTML" target="_blank">
+                    <img src="direct indicator.JPG" style="width:300px"alt="氣動顯示器 - 直動式1" />
+                </a>
+            </td>
+            <td>
+                <a href="氣動顯示器(直動式)2.HTML" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="氣動顯示器 - 直動式2" />
+                </a>
+            </td>
+            <td>
+                <a href="氣動顯示器(直動式)3.HTML" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="氣動顯示器 - 直動式3" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".png" style="width:150px"alt="氣動顯示器 - 旋轉式4" />
+                </a>
+            </td>
+            <td>        
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="氣動顯示器 - 旋轉式5" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="氣動顯示器 - 旋轉式6" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>這是直動式顯示器的內容。</p>
+</section>
+
+<section id="air-cylinder">
+    <h2>氣壓缸 - 標準缸</h2>
+    <table>
+        <tr>
+            <td>
+                <a href="氣壓缸(標準缸)1.html" target="_blank">
+                    <img src=".png" style="width:150px"alt="氣壓缸 - 標準1" />
+                </a>
+            </td>
+            <td>
+                <a href="氣壓缸(標準缸)2.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="氣壓缸 - 標準2" />
+                </a>
+            </td>
+            <td>
+                <a href="氣壓缸(標準缸)3.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="氣壓缸 - 標準3" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="氣壓缸(標準缸)4.html" target="_blank">
+                    <img src=".png" style="width:150px"alt="氣壓缸 - 標準4" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="氣壓缸 - 標準5" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="氣壓缸 - 標準6" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>這是標準缸的內容。</p>
+</section>
+
+<section id="specialair">
+    <h2>氣壓缸 - 特用缸</h2>
+    <table>
+        <tr>
+            <td>
+                <a href="氣壓缸(特用缸)1.html" target="_blank">
+                    <img src="PCB drilling cylinder.JPG" style="width:150px"alt="氣壓缸 - 特用1" />
+                </a>
+            </td>
+            <td>
+                <a href="氣壓缸(特用缸)2.html" target="_blank">
+                    <img src="PCB drilling cylinde with adpator 2.JPG" style="width:150px"alt="氣壓缸 - 特用2" />
+                </a>
+            </td>
+            <td>
+                <a href="氣壓缸(特用缸)3.html" target="_blank">
+                    <img src="special end and head cylinder.JPG" style="width:150px"alt="氣壓缸 - 特用3" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src="local scrubber cylinder.JPG" style="width:150px"alt="氣壓缸 - 特用4" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="氣壓缸 - 特用5" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="氣壓缸 - 特用6" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>這是特用缸的內容。</p>
+</section>
+
+<section id="control-valve">
+    <h2>控制閥 - 標準閥</h2>
+    <table>
+        <tr>
+            <td>
+                <a href="控制閥(標準)1.html" target="_blank">
+                    <img src=".png" style="width:150px"alt="控制閥 - 標準1" />
+                </a>
+            </td>
+            <td>
+                <a href="控制閥(標準)2.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="控制閥 - 標準2" />
+                </a>
+            </td>
+            <td>
+                <a href="控制閥(標準)3.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="控制閥 - 標準3" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".png" style="width:150px"alt="控制閥 - 標準4" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="控制閥 - 標準5" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="控制閥 - 標準6" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>這是標準閥的內容。</p>
+</section>
+
+<section id="specialval">
+    <h2>控制閥 - 特用閥</h2>
+    <table>
+        <tr>
+            <td>
+                <a href="控制閥(特用)1.html" target="_blank">
+                    <img src=".png" style="width:150px"alt="控制閥 - 特用1" />
+                </a>
+            </td>
+            <td>
+                <a href="控制閥(特用)2.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="控制閥 - 特用2" />
+                </a>
+            </td>
+            <td>
+                <a href="控制閥(特用)3.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="控制閥 - 特用3" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".png" style="width:150px"alt="控制閥 - 特用4" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="控制閥 - 特用5" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="控制閥 - 特用6" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>這是特用閥的內容。</p>
+</section>
+
+<section id="pressure-regulator-general">
+    <h2>調壓閥 - 一般型</h2>
+    <table>
+        <tr>
+            <td>
+                <a href="調壓閥(一般)1.html" target="_blank">
+                    <img src=".png" style="width:150px"alt="調壓閥-一般1" />
+                </a>
+            </td>
+            <td>
+                <a href="調壓閥(一般)2.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="調壓閥-一般2" />
+                </a>
+            </td>
+            <td>
+                <a href="調壓閥(一般)3.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="調壓閥-一般3" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".png" style="width:150px"alt="調壓閥-一般4" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="調壓閥-一般5" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="調壓閥-一般6" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>這是特用閥的內容。</p>
+</section>
+<section id="pressure-regulator-special">
+    <h2>調壓閥 - 特用閥</h2>
+    <table>
+        <tr>
+            <td>
+                <a href="調壓閥(特用)1.html" target="_blank">
+                    <img src=".png" style="width:150px"alt="調壓閥-特用1" />
+                </a>
+            </td>
+            <td>
+                <a href="調壓閥(特用)2.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="調壓閥-特用2" />
+                </a>
+            </td>
+            <td>
+                <a href="調壓閥(特用)3.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="調壓閥-特用3" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".png" style="width:150px"alt="調壓閥-特用4" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="調壓閥-特用5" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="調壓閥-特用6" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>這是特用閥的內容。</p>
+</section>
+<section id="pressure-relief-valve">
+    <h2>洩壓閥 - 一般型</h2>
+    <table>
+        <tr>
+            <td>
+                <a href="洩壓閥(一般)1.html" target="_blank">
+                    <img src=".png" style="width:150px"alt="洩壓閥-一般1" />
+                </a>
+            </td>
+            <td>
+                <a href="洩壓閥(一般)2.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="洩壓閥-一般2" />
+                </a>
+            </td>
+            <td>
+                <a href="洩壓閥(一般)3.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="洩壓閥-一般3" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".png" style="width:150px"alt="洩壓閥-一般4" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="洩壓閥-一般5" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="洩壓閥-一般6" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>這是特用閥的內容。</p>
+</section>
+<section id="special洩壓">
+    <h2>洩壓閥 - 特用閥</h2>
+    <table>
+        <tr>
+            <td>
+                <a href="洩壓閥(特用)1.html" target="_blank">
+                    <img src=".png" style="width:150px"alt="洩壓閥-特用1" />
+                </a>
+            </td>
+            <td>
+                <a href="洩壓閥(特用)2.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="洩壓閥-特用2" />
+                </a>
+            </td>
+            <td>
+                <a href="洩壓閥(特用)3.html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="洩壓閥-特用3" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".png" style="width:150px"alt="洩壓閥-特用4" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="洩壓閥-特用5" />
+                </a>
+            </td>
+            <td>
+                <a href=".html" target="_blank">
+                    <img src=".jpg" style="width:150px"alt="洩壓閥-特用6" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>這是特用閥的內容。</p>
+</section>
+<section id="contactme">
+    <h2>聯絡資料</h2>
+    <table>
+        <tr>
+            <td><img src="IMG_3958.JPG" alt="聯絡資料" /></td>
+      
+        </tr>
+    </table>
+    <p>如需聯絡，請寄送電子郵件至：</p>
+    <a href="mailto:jackylin@junyimaterial.com?subject=洽詢&body=您好，我想了解更多相關資訊。">jackylin@junyimaterial.com</a>
+    <p>或撥打聯絡電話：03-6582188</p>
+    
+</section>
+
+<footer>
+    <p>版權所有 &copy; Fluid+ &emsp;&emsp;鈞翼先進材料股份有限公司&emsp;&emsp;聯絡電話: 03-6582188 &emsp;電子郵件: jackylin@junyimaterial.com </p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    // 平滑滾動到對應 section
+    function showPage(pageId) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        const activeSection = document.getElementById(pageId);
+        if (activeSection) {
+            activeSection.classList.add('active');
+            activeSection.scrollIntoView({ behavior: 'smooth' }); // 平滑滾動
+        }
+    }
+
+    // 高亮顯示選單
+    const navLinks = document.querySelectorAll('nav .dropdown > a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.forEach(l => l.classList.remove('active-link'));
+            link.classList.add('active-link');
+        });
+    });
+
+    // 添加回到頂部按鈕
+    const backToTop = document.createElement('button');
+    backToTop.textContent = '回到頂部';
+    backToTop.style.position = 'fixed';
+    backToTop.style.bottom = '20px';
+    backToTop.style.right = '20px';
+    backToTop.style.padding = '10px 20px';
+    backToTop.style.backgroundColor = '#333';
+    backToTop.style.color = 'white';
+    backToTop.style.border = 'none';
+    backToTop.style.borderRadius = '5px';
+    backToTop.style.cursor = 'pointer';
+    backToTop.style.display = 'none';
+    document.body.appendChild(backToTop);
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    });
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 增加圖片懸停效果
+    const images = document.querySelectorAll('section img');
+    images.forEach(img => {
+        img.style.transition = 'transform 0.3s, box-shadow 0.3s';
+        img.addEventListener('mouseover', () => {
+            img.style.transform = 'scale(1.1)';
+            img.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+        });
+        img.addEventListener('mouseout', () => {
+            img.style.transform = 'scale(1)';
+            img.style.boxShadow = 'none';
+        });
+    });
+
+    // 動態建立選單
+    const menuItems = [
+        { name: "砷化鎵", pageId: "GaAs" },
+        { name: "磷化銦", pageId: "InP" },
+        {
+            name: "氣動顯示器", subItems: [
+                { name: "旋轉式", pageId: "pneumatic-rotary" },
+                { name: "直動式", pageId: "pneumatic-direct" }
+            ]
+        },
+        {
+            name: "氣壓缸", subItems: [
+                { name: "標準缸", pageId: "air-cylinder" },
+                { name: "特用缸", pageId: "specialair" }
+            ]
+        },
+        {
+            name: "控制閥", subItems: [
+                { name: "標準閥", pageId: "control-valve" },
+                { name: "特用閥", pageId: "specialval" }
+            ]
+        },
+        {
+            name: "調壓閥", subItems: [
+                { name: "一般型", pageId: "pressure-regulator-general" },
+                { name: "特用閥", pageId: "pressure-regulator-special" }
+            ]
+        },
+        {
+            name: "洩壓閥", subItems: [
+                { name: "一般型", pageId: "pressure-relief-valve" },
+                { name: "特用閥", pageId: "special洩壓" }
+            ]
+        },
+        { name: "聯絡資料", pageId: "contactme" }
+    ];
+
+    const nav = document.querySelector('nav');
+    menuItems.forEach(item => {
+        const dropdown = document.createElement('div');
+        dropdown.className = 'dropdown';
+
+        const link = document.createElement('a');
+        link.textContent = item.name;
+        if (item.subItems) {
+            const dropdownContent = document.createElement('div');
+            dropdownContent.className = 'dropdown-content';
+            item.subItems.forEach(subItem => {
+                const subLink = document.createElement('a');
+                subLink.textContent = subItem.name;
+                subLink.onclick = () => showPage(subItem.pageId);
+                dropdownContent.appendChild(subLink);
+            });
+            dropdown.appendChild(dropdownContent);
+        } else {
+            link.onclick = () => showPage(item.pageId);
+        }
+        dropdown.appendChild(link);
+        nav.appendChild(dropdown);
+    });
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
